@@ -1,9 +1,12 @@
+'use client';
+
+import Messenger from '../components/Messenger/Messenger';
 import Styles from './page.module.css';
 
 export default function Home() {
   return (
-    <main>
-
+    <main className={Styles.main}>
+      <Messenger />
     </main>
   );
 }
