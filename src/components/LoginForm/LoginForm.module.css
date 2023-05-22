@@ -40,3 +40,7 @@
   background-color: var(--brand-second-color);
   cursor: pointer;
 }
+
+.err {
+  color: red;
+}
