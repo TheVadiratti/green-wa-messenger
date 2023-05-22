@@ -1,0 +1,42 @@
+.form {
+  width: 30%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.label {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input {
+  width: 400px;
+  height: var(--input-height);
+  border-radius: 5px;
+  border: 1px solid #000;
+  font-size: 18px;
+  background-color: var(--brand-second-color);
+}
+
+.input:focus {
+  outline: 1px solid #000;
+}
+
+.button {
+  width: 30%;
+  height: var(--input-height);
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #000;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: var(--brand-second-color);
+  cursor: pointer;
+}
