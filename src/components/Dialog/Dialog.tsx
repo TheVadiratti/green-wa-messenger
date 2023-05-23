@@ -1,13 +1,20 @@
+import { Dispatch, SetStateAction } from 'react';
 import Styles from './Dialog.module.css';
 
 type Props = {
+  tel: string;
+  setCurrDialog: Dispatch<SetStateAction<string>>;
   isChecked: boolean;
 };
 
-export default function Dialog({ isChecked }: Props) {
+export default function Dialog({ tel, setCurrDialog, isChecked }: Props) {
+  const setCurr = () => {
+    setCurrDialog(tel);
+  };
+
   return (
-    <li className={`${Styles.cnt} ${isChecked && Styles.cntChecked}`}>
-      <p className={Styles.tel}>79122223505</p>
+    <li className={`${Styles.cnt} ${isChecked && Styles.cntChecked}`} onClick={setCurr}>
+      <p className={Styles.tel}>{tel}</p>
     </li>
   );
 }

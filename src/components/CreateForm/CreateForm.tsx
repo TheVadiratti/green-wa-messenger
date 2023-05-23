@@ -1,11 +1,31 @@
-import { useState } from 'react';
+import {
+  useState,
+  Dispatch,
+  SetStateAction,
+  FormEventHandler,
+} from 'react';
 import Styles from './CreateForm.module.css';
+import { TDialog } from '../../types';
 
-export default function CreateForm() {
+type Props = {
+  dialogs: TDialog[];
+  addDialog: Dispatch<SetStateAction<TDialog[]>>;
+  setCurrentDialog: Dispatch<SetStateAction<string>>;
+};
+
+export default function CreateForm({ dialogs, addDialog, setCurrentDialog }: Props) {
   const [telValue, setTelValue] = useState('');
 
+  const createDialog: FormEventHandler<HTMLFormElement> = (e) => {
+    e.preventDefault();
+
+    addDialog([{ tel: telValue }, ...dialogs]);
+    setCurrentDialog(telValue);
+    setTelValue('');
+  };
+
   return (
-    <form className={Styles.form}>
+    <form className={Styles.form} onSubmit={createDialog}>
       <label htmlFor='telephone' className={Styles.label}>
         Введите номер телефона
         <input

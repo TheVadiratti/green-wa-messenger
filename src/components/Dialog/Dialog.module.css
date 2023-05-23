@@ -10,8 +10,12 @@
 }
 
 .cntChecked {
-  background-color: #f0f2f5;
+  background-color: #d1d7db;
   cursor: inherit;
+}
+
+.cntChecked:hover {
+  background-color: #d1d7db;
 }
 
 .tel {
