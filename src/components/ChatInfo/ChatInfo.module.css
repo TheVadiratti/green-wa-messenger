@@ -1,0 +1,12 @@
+.info {
+  background-color: var(--panel-color);
+  border-bottom: 1px solid #000;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.chatName {
+  font-size: 20px;
+  margin: 0;
+}

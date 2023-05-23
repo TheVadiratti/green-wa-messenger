@@ -3,6 +3,7 @@ import Styles from './Messenger.module.css';
 import CreateForm from '../CreateForm/CreateForm';
 import Dialog from '../Dialog/Dialog';
 import { TDialog } from '../../types';
+import ChatInfo from '../ChatInfo/ChatInfo';
 
 export default function Messenger() {
   const [dialogs, setDialogs] = useState<TDialog[]>([]);
@@ -11,7 +12,7 @@ export default function Messenger() {
   return (
     <div className={Styles.window}>
       <CreateForm dialogs={dialogs} addDialog={setDialogs} setCurrentDialog={setCurrDialog} />
-      <div></div>
+      <ChatInfo currDialog={currDialog} />
       <ul className={Styles.dialogsList}>
         {dialogs.map((dialog, i) => (
           <Dialog
