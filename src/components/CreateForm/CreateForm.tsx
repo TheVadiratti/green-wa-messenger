@@ -42,7 +42,7 @@ export default function CreateForm({ dialogs, addDialog, setCurrentDialog }: Pro
 
       <button
         type='submit'
-        disabled={telValue.length !== 11}
+        disabled={telValue.length !== 11 || dialogs.some((item) => item.tel === telValue)}
         className={Styles.submitBtn}
       >Создать</button>
     </form>
