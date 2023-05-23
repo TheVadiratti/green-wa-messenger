@@ -6,7 +6,7 @@
   align-items: end;
   border-bottom: 1px solid #000;
   border-right: 1px solid #000;
-  background-color: #f0f2f5;
+  background-color: var(--panel-color);
 }
 
 .label {

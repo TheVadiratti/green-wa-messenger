@@ -10,12 +10,12 @@
 }
 
 .cntChecked {
-  background-color: #d1d7db;
+  background-color: var(--chat-color);
   cursor: inherit;
 }
 
 .cntChecked:hover {
-  background-color: #d1d7db;
+  background-color: var(--chat-color);
 }
 
 .tel {
