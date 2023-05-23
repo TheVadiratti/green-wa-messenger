@@ -22,7 +22,7 @@
   height: 30px;
   box-sizing: border-box;
   border: 1px solid gainsboro;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 14px;
   padding: 0 10px;
 }
@@ -33,7 +33,7 @@
   color: #fff;
   background-color: var(--brand-color);
   border: 1px solid gainsboro;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .submitBtn:hover {
@@ -43,7 +43,7 @@
 }
 
 .submitBtn:disabled {
-  background-color: darkgrey;
+  background-color: var(--disabled-btn-color);
   cursor: inherit;
   border: none;
   opacity: 1;
