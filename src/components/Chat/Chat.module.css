@@ -1,0 +1,38 @@
+.chat {
+  background-color: var(--chat-color);
+  display: flex;
+}
+
+.form {
+  width: 100%;
+  align-self: end;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  background-color: var(--panel-color);
+  gap: 10px;
+}
+
+.input {
+  width: 70%;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+.submitBtn {
+  border-radius: 8px;
+  border: none;
+  background-color: var(--brand-color);
+  padding: 0 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.submitBtn:disabled {
+  cursor: inherit;
+  background-color: var(--disabled-btn-color);
+}

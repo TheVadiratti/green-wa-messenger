@@ -4,6 +4,7 @@ import CreateForm from '../CreateForm/CreateForm';
 import Dialog from '../Dialog/Dialog';
 import { TDialog } from '../../types';
 import ChatInfo from '../ChatInfo/ChatInfo';
+import Chat from '../Chat/Chat';
 
 export default function Messenger() {
   const [dialogs, setDialogs] = useState<TDialog[]>([]);
@@ -23,8 +24,7 @@ export default function Messenger() {
           />
         ))}
       </ul>
-      <div className={Styles.chat}>
-      </div>
+      <Chat />
     </div>
   );
 }
