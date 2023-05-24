@@ -1,5 +1,13 @@
-type TDialog = {
+export type TDialog = {
   tel: string;
 };
 
-export { TDialog };
+export type TMessage = {
+  text: string;
+  owner: 'me' | 'notMe';
+  currDialog?: string;
+};
+
+export type TMessages = {
+  [chatName: string]: TMessage[];
+};
