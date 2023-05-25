@@ -1,0 +1,23 @@
+.cnt {
+  border-bottom: 1px solid #dcdcdc;
+  list-style-type: none;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.cnt:hover {
+  background-color: #fbfbfb;
+}
+
+.cntChecked {
+  background-color: var(--chat-color);
+  cursor: inherit;
+}
+
+.cntChecked:hover {
+  background-color: var(--chat-color);
+}
+
+.tel {
+  margin: 0;
+}

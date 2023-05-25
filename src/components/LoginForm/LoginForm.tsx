@@ -19,8 +19,8 @@ export default function LoginForm() {
       .then((res) => checkResponse(res, errText))
       .then((res) => {
         if (res.stateInstance === 'authorized') {
-          localStorage.setItem('idInstance', idValue);
-          localStorage.setItem('apiTokenInstance', tokenValue);
+          sessionStorage.setItem('idInstance', idValue);
+          sessionStorage.setItem('apiTokenInstance', tokenValue);
           return router.push('/');
         }
         return Promise.reject(new Error(errText));
@@ -38,6 +38,7 @@ export default function LoginForm() {
           onChange={(e) => setIdValue(e.target.value)}
           value={idValue}
           className={Styles.input}
+          required
         />
       </label>
 
@@ -49,6 +50,7 @@ export default function LoginForm() {
           onChange={(e) => setTokenValue(e.target.value)}
           value={tokenValue}
           className={Styles.input}
+          required
         />
       </label>
 
