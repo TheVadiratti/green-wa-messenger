@@ -7,9 +7,10 @@ import Styles from './page.module.css';
 
 export default function Home() {
   const router = useRouter();
-  const apiTokenInstance = sessionStorage.getItem('apiTokenInstance');
 
   useEffect(() => {
+    const apiTokenInstance = sessionStorage.getItem('apiTokenInstance') || null;
+
     if (!apiTokenInstance) {
       router.push('/login');
     }

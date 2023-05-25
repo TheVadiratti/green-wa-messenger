@@ -5,4 +5,4 @@ const checkResponse = (res: Response, errText: string) => {
   return Promise.reject(new Error(errText));
 };
 
-export { checkResponse };
+export default checkResponse;

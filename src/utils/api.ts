@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction } from 'react';
-import { checkResponse } from './utils';
+import checkResponse from './utils';
 import { TMessage } from '../types';
 
 const receiveNotification = (

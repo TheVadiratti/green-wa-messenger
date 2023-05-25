@@ -8,7 +8,7 @@ import { TMessage } from '../../types';
 import Styles from './ChatMessages.module.css';
 import Message from '../Message/Message';
 import receiveNotification from '../../utils/api';
-import { API_URL } from '../../utils/constants';
+import API_URL from '../../utils/constants';
 
 type Props = {
   currDialog: string;

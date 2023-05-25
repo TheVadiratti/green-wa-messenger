@@ -1,8 +1,8 @@
 import { useState, FormEventHandler } from 'react';
 import { useRouter } from 'next/navigation';
 import Styles from './LoginForm.module.css';
-import { API_URL } from '../../utils/constants';
-import { checkResponse } from '../../utils/utils';
+import API_URL from '../../utils/constants';
+import checkResponse from '../../utils/utils';
 
 export default function LoginForm() {
   const [idValue, setIdValue] = useState('');

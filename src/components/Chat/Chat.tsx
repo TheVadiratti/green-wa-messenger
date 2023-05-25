@@ -3,8 +3,8 @@ import {
   FormEventHandler,
 } from 'react';
 import Styles from './Chat.module.css';
-import { API_URL } from '../../utils/constants';
-import { checkResponse } from '../../utils/utils';
+import API_URL from '../../utils/constants';
+import checkResponse from '../../utils/utils';
 import ChatMessages from '../ChatMessages/ChatMessages';
 import { TMessage } from '../../types';
 
