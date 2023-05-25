@@ -1,11 +1,13 @@
 .chat {
+  height: 100%;
   background-color: var(--chat-color);
-  display: flex;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto max-content;
 }
 
 .form {
   width: 100%;
-  align-self: end;
   display: flex;
   justify-content: center;
   padding: 10px 0;

@@ -7,7 +7,3 @@ export type TMessage = {
   owner: 'me' | 'notMe';
   currDialog?: string;
 };
-
-export type TMessages = {
-  [chatName: string]: TMessage[];
-};

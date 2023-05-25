@@ -13,7 +13,11 @@ type Props = {
   setCurrentDialog: Dispatch<SetStateAction<string>>;
 };
 
-export default function CreateForm({ dialogs, addDialog, setCurrentDialog }: Props) {
+export default function CreateForm({
+  dialogs,
+  addDialog,
+  setCurrentDialog,
+}: Props) {
   const [telValue, setTelValue] = useState('');
 
   const createDialog: FormEventHandler<HTMLFormElement> = (e) => {

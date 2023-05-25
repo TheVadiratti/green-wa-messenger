@@ -12,7 +12,11 @@ export default function Messenger() {
 
   return (
     <div className={Styles.window}>
-      <CreateForm dialogs={dialogs} addDialog={setDialogs} setCurrentDialog={setCurrDialog} />
+      <CreateForm
+        dialogs={dialogs}
+        addDialog={setDialogs}
+        setCurrentDialog={setCurrDialog}
+      />
       <ChatInfo currDialog={currDialog} />
       <ul className={Styles.dialogsList}>
         {dialogs.map((dialog, i) => (
@@ -24,7 +28,9 @@ export default function Messenger() {
           />
         ))}
       </ul>
-      <Chat />
+      <Chat
+        currDialog={currDialog}
+      />
     </div>
   );
 }
