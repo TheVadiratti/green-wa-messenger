@@ -1,34 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Тестовое задание на должность "Фронтенд разработчик React"
+В рамках тестового задания требуется разработать пользовательский интерфейс для
+отправки и получений сообщений WhatsApp
+Время на выполнение задания: 5 дней
+Требования:
+1. Требуется разработать пользовательский интерфейс для отправки и получений
+сообщений WhatsApp
+2. Требуется использовать сервис GREEN-API https://green-api.com/
+3. Требуется реализовать отправку и получение только текстовых сообщений
+4. Требуется за прототип интерфейса взять внешний вид чата
+https://web.whatsapp.com/
+5. Требуется реализовать интерфейс максимально простым с минимальным набором
+функций
 
-## Getting Started
+6. Требуется отправку сообщений реализовать методом https://green-
+api.com/docs/api/sending/SendMessage/
 
-First, run the development server:
+7. Требуется получение сообщений реализовать методом https://green-
+api.com/docs/api/receiving/technology-http-api/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+8. Требуется использовать технологию React
+Ожидаемый результат:
+• Пользователь переходит на сайт чата и вводит свои учетные данные из
+системы GREEN-API (idInstance, apiTokenInstance)
+• Пользователь вводит номер телефона получателя и создает новый чат
+• Пользователь пишет текстовое сообщение и отправляет его получателю в
+WhatsApp
+• Получатель отвечает на сообщение в мессенджере WhatsApp
+• Пользователь видит ответ получателя в чате
