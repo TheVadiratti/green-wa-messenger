@@ -9,7 +9,7 @@ export default function Home() {
   const router = useRouter();
 
   useEffect(() => {
-    const apiTokenInstance = sessionStorage.getItem('apiTokenInstance') || null;
+    const apiTokenInstance = sessionStorage.getItem('apiTokenInstance');
 
     if (!apiTokenInstance) {
       router.push('/login');

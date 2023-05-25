@@ -14,12 +14,13 @@ type Props = {
 
 export default function Chat({ currDialog }: Props) {
   const [messageValue, setMessageValue] = useState('');
-  const idInstance = sessionStorage.getItem('idInstance');
-  const apiTokenInstance = sessionStorage.getItem('apiTokenInstance');
   const [messages, setMessages] = useState<TMessage[]>([]);
 
   const sendMessage: FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
+
+    const idInstance = sessionStorage.getItem('idInstance');
+    const apiTokenInstance = sessionStorage.getItem('apiTokenInstance');
 
     setMessageValue('');
 
